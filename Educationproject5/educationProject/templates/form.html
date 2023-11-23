@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body style="background:url('https://cdn.wallpapersafari.com/19/90/kGC79i.png')">
+<div class="Form">
+    <h1><center><u>Form</u></center></h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <label>name</label>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="name" placeholder="Enter name"><br><br>
+        <label>dob</label>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="date" name="dob" placeholder="Enter date of birth"><br><br>
+        <label>age</label>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="number" name="age" placeholder="Enter age"><br><br>
+    <label>Gender</label>
+ &nbsp; &nbsp; &nbsp; <input type="radio" name="gender">Female
+    &nbsp; &nbsp;<input type="radio" name="gender">Male<br><br>
+        <label>phoneno</label>
+ &nbsp; &nbsp;<input type="number" name="phoneno" placeholder="Enter phone no"><br><br>
+        <label>email</label>
+ &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="email" name="email" placeholder="Enter email"><br><br>
+    <label>address</label>
+ &nbsp; &nbsp; &nbsp;<input type="text" name="address" placeholder="Enter address"><br><br>
+    <label>department</label>
+ &nbsp; &nbsp; &nbsp;<select>
+    <option>---select option---</option>
+    <option>Computer Science</option>
+    <option>Commerce</option>
+    <option>Science</option>
+    <option>Humanities</option>
+</select>
+    <br>
+    <br>
+    <label>course</label>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<select>
+    <option>---select option---</option>
+    <option>Bsc</option>
+    <option>Msc</option>
+    <option>Bcom</option>
+    <option>Mcom</option>
+    <option>Bca</option>
+    <option>Mca</option>
+    <option>Bba</option>
+    <option>Mba</option>
+</select>
+    <br>
+    <br>
+    <button type="submit">submit</button>
+    &nbsp;<button type="logout">logout</button>
+</form>
+    </div>
+</body>
+</html>
